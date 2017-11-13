@@ -1,0 +1,49 @@
+.wrapper {
+
+  width: 650px;
+  margin: 0;
+  z-index: 999;
+}
+
+#fixed{
+	background-color: #eee;
+	width: 200px;
+	height: 100px;
+	position: fixed;
+	z-index: -1;
+}
+
+
+#relative {
+	background-color: #eee;
+	height: 250px;
+	position: relative;
+	right: 100;
+	margin-left: 150;
+	margin-right: 150;
+
+}
+
+#absolute {
+	background-color: #999;
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+	right: -20px;
+}
+.header {	https://www.themuse.com/static/stylesheets/post_individual.css?v=7227a4cef1f5d5a94e454a405508644c17cc3cc3a4e99db334b3a76403d51c6c
+    position: static;
+    padding: 0;
+}
+
+.header {	https://www.themuse.com/static/stylesheets/post_individual.css?v=7227a4cef1f5d5a94e454a405508644c17cc3cc3a4e99db334b3a76403d51c6c
+    text-align: center;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 400;
+}

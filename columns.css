@@ -1,0 +1,11 @@
+.container {
+	border-color: solid 2px grey;
+	padding: 45px;
+}
+.row {
+	border: solid 2px green;
+	padding: 10px;
+}
+.col-md-3 {
+	border: solid 2px purple;
+}

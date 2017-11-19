@@ -1,12 +1,67 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, main, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, main, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 html, body{
-	margin:52px 0 0 0;
+	  position: relative;
+  margin: 0;
+  min-height: 100%;
 		}
 body {
 		background-image: url("../images/brickwall/brickwall_@2X.png");
-		height: 6000px;
+		height: 800px;
 		width: 1160px;
 		font-family: ‘Lucida Grande’, ‘Lucida Sans Unicode’, Lucida, Verdana, Helvetica, Arial, sans-serif;
 	}
+h1 {
+	font-weight: bolder;
+	font-size: 20px;
+}
 #fixed {
 	color: #f5f2f2;
 	width: 150px;
@@ -24,6 +79,7 @@ header{
 				width: 100%;
 				top:0;
 				padding:0px;
+				z-index: 25;
 			}
 
 			header nav ul{
@@ -52,47 +108,82 @@ header{
 				transition: color 0.5s;
 			}		
 
-.wrapper {
-
-  width: 650px;
-  margin: 0;
-  z-index: 999;
+		 }
+.cleafix {
+	clear: both;
 }
-
-
-#relative {
-	background-color: #eee;
-	height: 100px;
-	position: relative;
-	left: 100
-	margin-left: 150;
-	margin-right: 150;
-
-}
-
-aside {
-	background-color: #fff;
+main {
+	background-color: #fff opacity:0.35;
 	height: 425px;
-	width: 650px;
-	float: left;
-	margin: 100px;
-	border: none;
-	padding-left: 15px;
-}
-aside p {
-    text-align: justify;
-    text-justify: inter-word;
-    margin: 20px;
-    position: relative;
-}
-img.floatLeft {
-float: left;
-margin-left: 10px;
-margin-right: 30px;
-margin-bottom: 10px;
-height: : 200px;
-width:  250px;
+	margin-top: 75px;
+	margin-left: 100px;
+	margin-right: 100px;
+	width: 980px;
+	padding-top: 25px;
+    filter: alpha(opacity=.50); /* For IE8 and earlier */
+		}
+	main .about {
+			background-color: #fff;
+			height: 265px;
+		    width: 650px;
+		    padding: 15px;
+		    float:left;
+			}
+			.about img.Jaxpic {
+			float: left;
+			margin-right: 30px;
+			margin-bottom: 10px;
+			height: : 200px;
+			width:  200px;
+			border-radius: 110%;
+			}
+			 .about p {
+				float: right;
+				position: relative;
+			    text-align: justify;
+			    text-justify: inter-word;
+			    width: 400px;
+				}
+		main .icons {
+			height: 100px;
+			width: 270px;
+			float: right;
+			background-color: white;
+			padding-top: 25px;
+			text-align: center;
+		}
+		main div a img {
+			height: 45px;
+			width: 45px;
+		}
+
+.footer {
+	height: : 100px;
+	width:  100%;
+	font-family: ‘Lucida Grande’, ‘Lucida Sans Unicode’, Lucida, Verdana, Helvetica, Arial, sans-serif;
+	color: white;
+	  right: 0;
+  bottom: 0;
+  left: 0;
+	background-color: #e4d6d6;
+	border-top: 5px solid;
+	border-color: brown;
+	position: absolute;
+	padding: 1rem;
+	text-align: center;
 }
 
+input [type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
+input[type=submit]:hover {
+    background-color: #45a049;
 }
